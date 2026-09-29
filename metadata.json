@@ -1,0 +1,7 @@
+{
+  "name": "VKCS Tally Add-ons Storefront",
+  "description": "Enterprise storefront for 21+ certified TallyPrime add-on modules, live demos, and licensing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,363 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Teal / Cyan Rich Professional Tone) -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e7490" />
+      <stop offset="35%" stop-color="#0d6874" />
+      <stop offset="70%" stop-color="#084c56" />
+      <stop offset="100%" stop-color="#032c33" />
+    </linearGradient>
+
+    <!-- Curved Ribbon & Background Glows -->
+    <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Card Shadow Filters -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1280" height="720" fill="url(#bgGradient)" />
+
+  <!-- Ambient Wave Ribbons & Office Glow -->
+  <path d="M -100,200 Q 200,80 500,240 T 1300,150 L 1300,0 L -100,0 Z" fill="url(#swooshGrad)" />
+  <path d="M -50,600 Q 400,450 800,680 T 1380,500 L 1380,720 L -50,720 Z" fill="#042f2e" opacity="0.65" />
+  <circle cx="1100" cy="280" r="350" fill="#06b6d4" opacity="0.06" />
+
+  <!-- Top Left: TallyPrime Official Logo Card -->
+  <g transform="translate(35, 30)" filter="url(#badgeShadow)">
+    <rect width="280" height="80" rx="14" fill="#ffffff" />
+    <!-- Tally Square Logo Mark -->
+    <g transform="translate(22, 16)">
+      <rect x="0" y="0" width="22" height="22" rx="3" fill="#1e40af" />
+      <rect x="26" y="0" width="22" height="22" rx="3" fill="#e2e8f0" />
+      <rect x="0" y="26" width="22" height="22" rx="3" fill="#f59e0b" />
+      <rect x="26" y="26" width="22" height="22" rx="3" fill="#10b981" />
+      <path d="M 37,33 L 43,39 M 43,33 L 43,39 L 37,39" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    </g>
+    <!-- TallyPrime Brand Text -->
+    <text x="82" y="54" fill="#1e293b" font-family="'Segoe UI', 'Inter', sans-serif" font-size="32" font-weight="800" letter-spacing="-0.5">
+      TallyPrime
+    </text>
+  </g>
+
+  <!-- Speech Bubble Badge: FREE! ADDON -->
+  <g transform="translate(285, 95)" filter="url(#badgeShadow)">
+    <path d="M 10,0 L 140,0 C 148,0 152,6 152,14 L 152,70 C 152,78 148,84 140,84 L 50,84 L 20,110 L 25,84 L 10,84 C 4,84 0,78 0,70 L 0,14 C 0,6 4,0 10,0 Z" fill="#0284c7" stroke="#bae6fd" stroke-width="3" />
+    <text x="76" y="40" text-anchor="middle" fill="#fde047" font-family="'Arial Black', sans-serif" font-size="28" font-weight="900" letter-spacing="1" filter="url(#textShadow)">
+      FREE!
+    </text>
+    <text x="76" y="72" text-anchor="middle" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" letter-spacing="1" filter="url(#textShadow)">
+      ADDON
+    </text>
+  </g>
+
+  <!-- Main Headline (Top Right) -->
+  <g transform="translate(740, 75)" filter="url(#textShadow)">
+    <text text-anchor="middle" fill="#fef08a" stroke="#000000" stroke-width="3.5" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="48" font-weight="900" letter-spacing="0.5">
+      Free Addon -
+    </text>
+    <text y="72" text-anchor="middle" fill="#fef08a" stroke="#000000" stroke-width="3.5" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="56" font-weight="900" letter-spacing="0.5">
+      Print Multi Bank Details
+    </text>
+    <text y="145" text-anchor="middle" fill="#fef08a" stroke="#000000" stroke-width="3.5" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="50" font-weight="900" letter-spacing="0.5">
+      with UPI on Modern Invoice
+    </text>
+  </g>
+
+  <!-- Center Right: Laptop Background & Modern Invoice Sheet -->
+  <!-- Laptop Backing Frame -->
+  <g transform="translate(870, 440)" opacity="0.35">
+    <rect width="420" height="280" rx="16" fill="#0f172a" stroke="#475569" stroke-width="4" />
+    <rect x="15" y="15" width="390" height="250" fill="#1e293b" />
+    <text x="30" y="55" fill="#38bdf8" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="bold">TallyPrime</text>
+  </g>
+
+  <!-- Modern Invoice Paper Document -->
+  <g transform="translate(495, 335)" filter="url(#cardShadow)">
+    <rect width="480" height="290" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Document Header -->
+    <g transform="translate(20, 20)">
+      <!-- Colorful modern brand icon -->
+      <polygon points="0,8 14,0 14,16" fill="#f59e0b" />
+      <polygon points="14,0 28,8 14,16" fill="#0284c7" />
+      <polygon points="14,16 28,24 14,32" fill="#10b981" />
+      <polygon points="0,24 14,16 14,32" fill="#6366f1" />
+
+      <text x="38" y="16" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">XYZ INFOTECH LTD</text>
+      <text x="38" y="28" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="8">Aim To Excel Service Today For Better Tomorrow</text>
+
+      <!-- Right align Invoice Title -->
+      <text x="440" y="16" text-anchor="end" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">MODERN INVOICE</text>
+      <text x="440" y="28" text-anchor="end" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">SALES INVOICE</text>
+    </g>
+
+    <!-- Meta Details Row -->
+    <g transform="translate(20, 68)" font-family="'Segoe UI', sans-serif" font-size="9" fill="#334155">
+      <text y="0" font-weight="600">Professional Services</text>
+      <text y="12">TAX INVOICE</text>
+      <text y="24">E-Way Bill, CN Invoices</text>
+
+      <text x="440" y="0" text-anchor="end">XYZ INFOTECH LTD</text>
+      <text x="440" y="12" text-anchor="end">A/c No: 812..., A/c No: 5023..., 2830...</text>
+      <text x="440" y="24" text-anchor="end">IFSC: ICICI, ICIB..., HDFC</text>
+    </g>
+
+    <!-- Table Header (Dark Blue) -->
+    <rect x="18" y="102" width="444" height="20" fill="#1e40af" rx="2" />
+    <g transform="translate(24, 115)" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">
+      <text x="0">No</text>
+      <text x="30">Item</text>
+      <text x="260">Qty</text>
+      <text x="320">Rate</text>
+      <text x="380">Amount</text>
+    </g>
+
+    <!-- Table Row 1 -->
+    <g transform="translate(24, 136)" fill="#1e293b" font-family="'Segoe UI', sans-serif" font-size="9">
+      <text x="0">1</text>
+      <text x="30" font-weight="600">Multi Bank Invoice TDL</text>
+      <text x="260">1</text>
+      <text x="320">80.00</text>
+      <text x="380" font-weight="bold">380.00</text>
+    </g>
+    <line x1="18" y1="145" x2="462" y2="145" stroke="#f1f5f9" stroke-width="1" />
+
+    <g transform="translate(24, 158)" fill="#64748b" font-family="'Segoe UI', sans-serif" font-size="8">
+      <text x="30">Dynamic UPI Add-on License</text>
+    </g>
+
+    <!-- Subtotals Row -->
+    <g transform="translate(440, 185)" text-anchor="end" font-family="'Segoe UI', sans-serif" font-size="9" fill="#1e293b">
+      <text y="0">Tax Total: <tspan font-weight="bold">80.00</tspan></text>
+      <text y="14">Net Total: <tspan font-weight="bold">30.00</tspan></text>
+    </g>
+  </g>
+
+  <!-- Popout Card 1: OUR BANK DETAILS (Multi Bank Accounts) -->
+  <g transform="translate(470, 452)" filter="url(#cardShadow)">
+    <rect width="285" height="105" rx="12" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5" />
+    <text x="142" y="24" text-anchor="middle" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800" letter-spacing="0.5">
+      OUR BANK DETAILS
+    </text>
+
+    <!-- HDFC Bank Info -->
+    <g transform="translate(15, 38)">
+      <rect width="120" height="20" rx="3" fill="#004c8f" />
+      <text x="60" y="14" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">
+        + HDFC BANK
+      </text>
+      <text x="0" y="34" fill="#1e293b" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">
+        A/c: 502... 5027636
+      </text>
+      <text x="0" y="46" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="9">
+        IFSC: HDFC...
+      </text>
+    </g>
+
+    <!-- ICICI Bank Info -->
+    <g transform="translate(150, 38)">
+      <rect width="120" height="20" rx="3" fill="#be123c" />
+      <text x="60" y="14" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">
+        ICICI BANK
+      </text>
+      <text x="0" y="34" fill="#1e293b" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">
+        A/c: 019... 61301639
+      </text>
+      <text x="0" y="46" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="9">
+        IFSC: ICICI...
+      </text>
+    </g>
+  </g>
+
+  <!-- Popout Card 2: PAY VIA UPI (QR Code & Apps) -->
+  <g transform="translate(775, 452)" filter="url(#cardShadow)">
+    <rect width="200" height="105" rx="12" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5" />
+    <text x="100" y="24" text-anchor="middle" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800" letter-spacing="0.5">
+      PAY VIA UPI
+    </text>
+
+    <!-- Crisp Detailed Vector QR Code -->
+    <g transform="translate(74, 32)">
+      <rect width="52" height="52" rx="4" fill="#0f172a" />
+      <!-- Outer Top-Left Target -->
+      <rect x="5" y="5" width="14" height="14" fill="#ffffff" />
+      <rect x="8" y="8" width="8" height="8" fill="#0f172a" />
+      <!-- Outer Top-Right Target -->
+      <rect x="33" y="5" width="14" height="14" fill="#ffffff" />
+      <rect x="36" y="8" width="8" height="8" fill="#0f172a" />
+      <!-- Outer Bottom-Left Target -->
+      <rect x="5" y="33" width="14" height="14" fill="#ffffff" />
+      <rect x="8" y="36" width="8" height="8" fill="#0f172a" />
+      <!-- Data Bits -->
+      <rect x="23" y="8" width="6" height="6" fill="#ffffff" />
+      <rect x="23" y="23" width="6" height="6" fill="#ffffff" />
+      <rect x="33" y="23" width="6" height="6" fill="#ffffff" />
+      <rect x="23" y="38" width="6" height="6" fill="#ffffff" />
+      <rect x="38" y="36" width="8" height="8" fill="#ffffff" />
+    </g>
+
+    <!-- Small UPI vertical ribbon -->
+    <rect x="136" y="35" width="12" height="46" rx="2" fill="#f8fafc" stroke="#cbd5e1" />
+    <text x="142" y="60" text-anchor="middle" fill="#0f172a" font-family="'Arial Black', sans-serif" font-size="8" font-weight="bold" transform="rotate(90 142 60)">
+      UPI
+    </text>
+
+    <text x="100" y="92" text-anchor="middle" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold">
+      UNIQUE UPI QR
+    </text>
+    <text x="100" y="101" text-anchor="middle" fill="#1e40af" font-family="'Segoe UI', sans-serif" font-size="7.5" font-weight="bold">
+      Paytm / GPay / BHIM
+    </text>
+  </g>
+
+  <!-- Left Foreground: Smiling Professional Indian Man in Blue Shirt Holding Phone -->
+  <g transform="translate(25, 115)">
+    <!-- Body / Blue Collared Shirt -->
+    <path d="M 30,680 C 15,480 50,380 120,335 L 210,430 L 300,335 C 370,380 405,480 390,680 Z" fill="#1d4ed8" filter="url(#cardShadow)" />
+    <!-- Collar & Placket -->
+    <polygon points="160,345 210,440 260,345 235,335 210,360 185,335" fill="#1e40af" />
+    <line x1="210" y1="365" x2="210" y2="580" stroke="#1e3a8a" stroke-width="3" />
+    <circle cx="210" cy="420" r="3.5" fill="#ffffff" />
+    <circle cx="210" cy="470" r="3.5" fill="#ffffff" />
+    <circle cx="210" cy="520" r="3.5" fill="#ffffff" />
+
+    <!-- Neck -->
+    <rect x="186" y="270" width="48" height="75" rx="14" fill="#c68b59" />
+
+    <!-- Head & Face -->
+    <ellipse cx="210" cy="220" rx="54" ry="65" fill="#d89b6a" />
+
+    <!-- Short Styled Black Hair & Neat Beard -->
+    <path d="M 148,225 C 140,150 160,110 210,110 C 260,110 280,150 272,225 C 275,260 272,275 260,290 C 250,302 235,308 210,308 C 185,308 170,302 160,290 C 148,275 145,260 148,225 Z" fill="#1c1917" opacity="0.2" />
+    <!-- Hair Volume Top -->
+    <path d="M 152,195 C 145,130 170,95 215,95 C 260,95 282,130 274,195 C 268,145 245,120 212,120 C 178,120 158,145 152,195 Z" fill="#18181b" />
+    <!-- Beard Trim Along Jawline -->
+    <path d="M 160,240 C 160,285 180,300 210,300 C 240,300 260,285 260,240 C 255,275 238,290 210,290 C 182,290 165,275 160,240 Z" fill="#27272a" />
+
+    <!-- Eyes -->
+    <ellipse cx="188" cy="205" rx="7" ry="4" fill="#ffffff" />
+    <circle cx="188" cy="205" r="3.2" fill="#1e293b" />
+    <ellipse cx="232" cy="205" rx="7" ry="4" fill="#ffffff" />
+    <circle cx="232" cy="205" r="3.2" fill="#1e293b" />
+    <!-- Eyebrows -->
+    <path d="M 178,193 Q 188,187 198,193" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M 222,193 Q 232,187 242,193" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <!-- Nose -->
+    <path d="M 210,205 L 206,224 L 214,225" stroke="#b57948" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Warm Confident Smile -->
+    <path d="M 192,246 Q 210,265 228,246 Z" fill="#991b1b" />
+    <path d="M 195,246 Q 210,256 225,246 Z" fill="#ffffff" />
+
+    <!-- Right Arm & Pointing Hand (Pointing to the Phone Screen) -->
+    <g transform="translate(150, 440) rotate(-10)" filter="url(#badgeShadow)">
+      <!-- Sleeve -->
+      <path d="M 0,30 L 60,0 L 80,45 L 20,70 Z" fill="#1d4ed8" />
+      <!-- Forearm & Hand Base -->
+      <rect x="55" y="15" width="55" height="28" rx="10" fill="#d89b6a" />
+      <!-- Extended Pointing Index Finger -->
+      <rect x="85" y="10" width="65" height="14" rx="7" fill="#d89b6a" />
+      <!-- Folded Fingers -->
+      <rect x="80" y="26" width="28" height="12" rx="6" fill="#c68b59" />
+      <rect x="75" y="37" width="26" height="10" rx="5" fill="#b57948" />
+    </g>
+
+    <!-- Left Arm & Hand Holding Smartphone Raised Up -->
+    <g transform="translate(340, 220)" filter="url(#cardShadow)">
+      <!-- Modern Smartphone Frame (Dark Slate / Blue Gloss) -->
+      <rect width="82" height="165" rx="16" fill="#020617" stroke="#64748b" stroke-width="2.5" />
+      <rect x="5" y="5" width="72" height="155" rx="12" fill="#ffffff" />
+      <!-- Speaker Notch & Camera -->
+      <ellipse cx="41" cy="10" rx="6" ry="2" fill="#0f172a" />
+
+      <!-- Mobile Screen Display: UPI Payment App with QR Code -->
+      <!-- App Header Bar -->
+      <rect x="5" y="14" width="72" height="20" fill="#1e40af" />
+      <text x="41" y="28" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold">
+        UPI Pay
+      </text>
+
+      <!-- Smartphone Screen QR Code -->
+      <g transform="translate(18, 44)">
+        <rect width="46" height="46" rx="3" fill="#0f172a" />
+        <!-- Inner QR elements -->
+        <rect x="4" y="4" width="12" height="12" fill="#ffffff" />
+        <rect x="6" y="6" width="8" height="8" fill="#0f172a" />
+        <rect x="30" y="4" width="12" height="12" fill="#ffffff" />
+        <rect x="32" y="6" width="8" height="8" fill="#0f172a" />
+        <rect x="4" y="30" width="12" height="12" fill="#ffffff" />
+        <rect x="6" y="32" width="8" height="8" fill="#0f172a" />
+        <rect x="20" y="8" width="6" height="6" fill="#ffffff" />
+        <rect x="20" y="20" width="6" height="6" fill="#ffffff" />
+        <rect x="30" y="20" width="6" height="6" fill="#ffffff" />
+        <rect x="20" y="32" width="6" height="6" fill="#ffffff" />
+      </g>
+
+      <!-- Green Pay Button on Mobile Screen -->
+      <rect x="12" y="102" width="58" height="16" rx="8" fill="#22c55e" />
+      <text x="41" y="113" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="7.5" font-weight="bold">
+        SCAN &amp; PAY
+      </text>
+
+      <!-- Hand Fingers Wrapping Around Phone Frame -->
+      <!-- Thumb on Left -->
+      <path d="M 0,90 C -15,85 -15,115 2,120 Z" fill="#d89b6a" />
+      <!-- Fingers on Right -->
+      <ellipse cx="84" cy="70" rx="6" ry="9" fill="#d89b6a" />
+      <ellipse cx="84" cy="90" rx="6" ry="9" fill="#d89b6a" />
+      <ellipse cx="84" cy="110" rx="6" ry="9" fill="#d89b6a" />
+      <ellipse cx="83" cy="128" rx="5" ry="8" fill="#c68b59" />
+    </g>
+  </g>
+
+  <!-- Bottom Left: DOWNLOAD NOW FREE Badge with TallyPrime Mark -->
+  <g transform="translate(25, 595)" filter="url(#badgeShadow)">
+    <rect width="360" height="105" rx="22" fill="#042f2e" stroke="#2dd4bf" stroke-width="3" />
+
+    <!-- White Inner Card for Tally Square -->
+    <rect x="15" y="12" width="80" height="80" rx="16" fill="#ffffff" />
+    <g transform="translate(28, 22)">
+      <rect x="0" y="0" width="24" height="24" rx="4" fill="#1e40af" />
+      <rect x="28" y="0" width="24" height="24" rx="4" fill="#e2e8f0" />
+      <rect x="0" y="28" width="24" height="24" rx="4" fill="#f59e0b" />
+      <rect x="28" y="28" width="24" height="24" rx="4" fill="#10b981" />
+      <text x="26" y="66" text-anchor="middle" fill="#1e293b" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">TallyPrime</text>
+    </g>
+
+    <!-- Download Call to Action -->
+    <text x="115" y="46" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" letter-spacing="0.5">
+      DOWNLOAD NOW
+    </text>
+    <text x="115" y="92" fill="#fde047" stroke="#000000" stroke-width="1" font-family="'Arial Black', sans-serif" font-size="48" font-weight="900" letter-spacing="1">
+      FREE
+    </text>
+  </g>
+
+  <!-- Bottom Right: High-Impact Bullet Points matching 21.jpg -->
+  <g transform="translate(435, 630)" filter="url(#textShadow)">
+    <!-- Bullet 1 -->
+    <circle cx="10" cy="15" r="8" fill="#fde047" />
+    <text x="32" y="24" fill="#ffffff" font-family="'Segoe UI', 'Inter', sans-serif" font-size="24" font-weight="800" letter-spacing="-0.2">
+      Simplify Collections <tspan fill="#6ee7b7">|</tspan> Add Multiple Bank Accounts
+    </text>
+
+    <!-- Bullet 2 -->
+    <circle cx="10" cy="60" r="8" fill="#fde047" />
+    <text x="32" y="69" fill="#ffffff" font-family="'Segoe UI', 'Inter', sans-serif" font-size="24" font-weight="800" letter-spacing="-0.2">
+      Unique UPI QR on Sales, SO, DN, CN Invoices
+    </text>
+  </g>
+</svg>

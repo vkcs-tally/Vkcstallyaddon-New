@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081c2d" />
+      <stop offset="40%" stop-color="#0b2b46" />
+      <stop offset="80%" stop-color="#071926" />
+      <stop offset="100%" stop-color="#020b12" />
+    </linearGradient>
+
+    <!-- Dialog Header Gradient -->
+    <linearGradient id="dialogHead" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e4e8c" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Text Outline Filter -->
+    <filter id="heavyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9" />
+    </filter>
+
+    <filter id="cardDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1280" height="720" fill="url(#darkBg)" />
+
+  <!-- Office Desk & Tech Blur in Background -->
+  <g opacity="0.22">
+    <!-- Monitor Backing -->
+    <rect x="780" y="120" width="460" height="390" rx="16" fill="#020617" stroke="#334155" stroke-width="6" />
+    <rect x="795" y="135" width="430" height="270" fill="#f8fafc" />
+    <!-- Blue header of Tally on Monitor -->
+    <rect x="795" y="135" width="430" height="30" fill="#0284c7" />
+    <text x="810" y="155" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold">TallyPrime</text>
+    <!-- Desk Surface -->
+    <polygon points="0,480 1280,440 1280,720 0,720" fill="#0b1e30" />
+    <!-- Keyboard & Mouse silhouettes -->
+    <rect x="350" y="600" width="320" height="80" rx="10" fill="#1e293b" transform="rotate(-5 350 600)" />
+    <ellipse cx="630" cy="640" rx="30" ry="40" fill="#334155" />
+    <!-- Coffee Mug -->
+    <ellipse cx="490" cy="540" rx="22" ry="12" fill="#475569" />
+    <rect x="468" y="540" width="44" height="45" rx="6" fill="#334155" />
+  </g>
+
+  <!-- Big Yellow Header on Top: Free Addon - Apply Watermark on Vouchers and Reports -->
+  <g transform="translate(440, 65)" filter="url(#heavyShadow)">
+    <text text-anchor="middle" fill="#fde047" stroke="#000000" stroke-width="3" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="52" font-weight="900" letter-spacing="0.5">
+      Free Addon -
+    </text>
+    <text y="70" text-anchor="middle" fill="#fde047" stroke="#000000" stroke-width="3" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="64" font-weight="900" letter-spacing="0.5">
+      Apply Watermark
+    </text>
+    <text y="140" text-anchor="middle" fill="#fde047" stroke="#000000" stroke-width="3" font-family="'Arial Black', 'Montserrat', Impact, sans-serif" font-size="56" font-weight="900" letter-spacing="0.5">
+      on Vouchers and Reports
+    </text>
+  </g>
+
+  <!-- Subtitle Text -->
+  <g transform="translate(50, 248)" filter="url(#heavyShadow)">
+    <text fill="#ffffff" font-family="'Segoe UI', 'Inter', sans-serif" font-size="24" font-weight="700">
+      Secure Your Company Data! Stamp Custom Logos
+    </text>
+    <text y="34" fill="#ffffff" font-family="'Segoe UI', 'Inter', sans-serif" font-size="24" font-weight="700">
+      or Text on ALL Prints &amp; Exports. Easy &amp; Effective!
+    </text>
+  </g>
+
+  <!-- Tally Logo in Top Right Corner -->
+  <g transform="translate(1110, 40)">
+    <text x="0" y="50" fill="#ffffff" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="68" font-weight="bold" font-style="italic" letter-spacing="-1" filter="url(#heavyShadow)">
+      Tally
+    </text>
+    <line x1="-10" y1="65" x2="100" y2="65" stroke="#ffffff" stroke-width="4" stroke-linecap="round" filter="url(#heavyShadow)" />
+  </g>
+
+  <!-- Left: Watermark Settings Dialog Box -->
+  <g transform="translate(48, 320)" filter="url(#cardDrop)">
+    <!-- Box Body -->
+    <rect width="450" height="195" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="2" />
+    <!-- Header -->
+    <path d="M 0,0 L 450,0 L 450,42 L 0,42 Z" fill="url(#dialogHead)" rx="8" />
+    <text x="225" y="28" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="800" letter-spacing="0.5">
+      Watermark Settings
+    </text>
+
+    <!-- Dialog Fields -->
+    <g transform="translate(22, 70)" font-family="'Segoe UI', 'Inter', sans-serif" font-size="19" fill="#0f172a">
+      <text y="0" font-weight="600">Enable Watermark</text>
+      <text x="215" y="0" font-weight="800">: Yes</text>
+
+      <text y="35" font-weight="600">Watermark Type</text>
+      <text x="215" y="35" font-weight="800">: Logo/Text</text>
+
+      <text y="70" font-weight="600">Select Logo</text>
+      <text x="215" y="70" font-weight="800">: [ABC Logo]</text>
+
+      <text y="105" font-weight="600">Watermark Text</text>
+      <text x="215" y="105" font-weight="900" letter-spacing="1">: CONFIDENTIAL</text>
+    </g>
+  </g>
+
+  <!-- Curved Arrow pointing down to Download Button -->
+  <g transform="translate(40, 520)" filter="url(#heavyShadow)">
+    <path d="M 55,5 C 20,40 25,80 40,110" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+    <polygon points="40,110 30,95 48,100" fill="#ffffff" />
+  </g>
+
+  <!-- Download Free Addon Button / Badge (Bottom Left) -->
+  <g transform="translate(75, 595)" filter="url(#heavyShadow)">
+    <!-- Blue App Icon with Tw -->
+    <rect width="76" height="76" rx="16" fill="#0284c7" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 20,18 L 56,18 L 56,28 L 44,28 L 44,58 L 32,58 L 32,28 L 20,28 Z" fill="#ffffff" />
+    <rect x="44" y="40" width="28" height="28" rx="6" fill="#f8fafc" />
+    <text x="58" y="60" text-anchor="middle" fill="#0284c7" font-family="'Arial Black', sans-serif" font-size="18" font-weight="900">W</text>
+
+    <!-- Starburst FREE tag -->
+    <g transform="translate(70, -10)">
+      <circle cx="14" cy="14" r="18" fill="#ea580c" stroke="#fed7aa" stroke-width="2" stroke-dasharray="3,3" />
+      <text x="14" y="19" text-anchor="middle" fill="#ffffff" font-family="'Arial Black', sans-serif" font-size="11" font-weight="900">FREE</text>
+    </g>
+
+    <!-- DOWNLOAD FREE ADDON! Text -->
+    <g transform="translate(95, 30)">
+      <text x="0" y="0" fill="#fde047" stroke="#000000" stroke-width="1.5" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" letter-spacing="0.5">
+        DOWNLOAD
+      </text>
+      <text x="0" y="38" fill="#fde047" stroke="#000000" stroke-width="1.5" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" letter-spacing="0.5">
+        FREE ADDON!
+      </text>
+    </g>
+  </g>
+
+  <!-- Printed Invoices Held in Center Foreground -->
+  <g transform="translate(690, 340) rotate(-7)" filter="url(#cardDrop)">
+    <!-- Paper 1 (Background Invoice): Payment Voucher -->
+    <g transform="translate(30, -170) rotate(5)">
+      <rect width="280" height="390" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+      <!-- Company logo box -->
+      <rect x="180" y="15" width="85" height="45" rx="4" fill="#f1f5f9" stroke="#94a3b8" />
+      <text x="222" y="32" text-anchor="middle" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">Company Logo</text>
+      <rect x="212" y="36" width="20" height="16" rx="2" fill="#0284c7" />
+      <text x="222" y="49" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">W</text>
+      <!-- Title -->
+      <text x="20" y="35" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">ABC Pvt Ltd</text>
+      <text x="20" y="52" fill="#475569" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600">Payment Voucher</text>
+      <!-- Table Rows -->
+      <line x1="15" y1="70" x2="265" y2="70" stroke="#0f172a" stroke-width="1.5" />
+      <rect x="15" y="78" width="250" height="14" fill="#f8fafc" />
+      <rect x="15" y="98" width="250" height="14" fill="#ffffff" />
+      <rect x="15" y="118" width="250" height="14" fill="#f8fafc" />
+      <rect x="15" y="138" width="250" height="14" fill="#ffffff" />
+
+      <!-- Faint Watermark CONFIDENTIAL on Paper 1 -->
+      <text x="140" y="220" text-anchor="middle" fill="#64748b" opacity="0.25" font-family="'Arial Black', sans-serif" font-size="24" font-weight="900" transform="rotate(-40 140 220)">
+        CONFIDENTIAL
+      </text>
+    </g>
+
+    <!-- Paper 2 (Foreground Tilted Sales Register Report) -->
+    <g transform="translate(-80, -90) rotate(-6)">
+      <rect width="310" height="440" rx="4" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+
+      <!-- Report Header -->
+      <text x="155" y="38" text-anchor="middle" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold">ABC Pvt Ltd</text>
+      <text x="155" y="58" text-anchor="middle" fill="#334155" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">(Sales Register)</text>
+
+      <!-- Table Header -->
+      <rect x="12" y="75" width="286" height="20" fill="#e2e8f0" />
+      <text x="20" y="89" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">Tally Report / Voucher</text>
+      <text x="235" y="89" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold">Amount</text>
+
+      <!-- Table Lines -->
+      <g fill="#1e293b" font-family="'Segoe UI', sans-serif" font-size="9">
+        <text x="20" y="110">Sales Register 01</text> <text x="235" y="110">12,000,000</text>
+        <text x="20" y="126">ABC Pvt Ltd</text> <text x="235" y="126">13,000,000</text>
+        <text x="20" y="142">Eastern Investors</text> <text x="235" y="142">8,750,000</text>
+        <text x="20" y="158">Demanded Sales Report</text> <text x="235" y="158">3,250,000</text>
+        <text x="20" y="174">Standard Stock</text> <text x="235" y="174">2,850,000</text>
+        <text x="20" y="190">Watermark Test</text> <text x="235" y="190">250,000</text>
+        <text x="20" y="206">Sales Invoice #114</text> <text x="235" y="206">450,000</text>
+        <text x="20" y="222">Financial Summary</text> <text x="235" y="222">1,650,000</text>
+        <text x="20" y="238">Exporting Sales</text> <text x="235" y="238">2,600,000</text>
+        <text x="20" y="254">Audited Ledger</text> <text x="235" y="254">3,600,000</text>
+      </g>
+
+      <!-- Total Row -->
+      <rect x="12" y="370" width="286" height="22" fill="#f1f5f9" stroke="#cbd5e1" />
+      <text x="20" y="385" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">Total Value</text>
+      <text x="230" y="385" fill="#0f172a" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold">33,915,000</text>
+
+      <!-- STAMP WATERMARKS ON REPORT -->
+      <!-- Large Diagonal Watermark: CONFIDENTIAL - ABC Pvt Ltd -->
+      <g transform="translate(155, 230) rotate(-55)">
+        <text text-anchor="middle" fill="#475569" opacity="0.42" font-family="'Arial Black', 'Montserrat', sans-serif" font-size="24" font-weight="900" letter-spacing="1.5">
+          CONFIDENTIAL - ABC Pvt Ltd
+        </text>
+      </g>
+
+      <!-- Right Edge Stamp Watermark: VERIFIED BY ABC -->
+      <g transform="translate(275, 140) rotate(-60)">
+        <text text-anchor="middle" fill="#64748b" opacity="0.55" font-family="'Arial Black', sans-serif" font-size="16" font-weight="900" letter-spacing="2">
+          VERIFIED BY ABC
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Smiling Professional Indian Woman in Navy Blazer (Right Foreground) -->
+  <g transform="translate(1000, 270)" filter="url(#cardDrop)">
+    <!-- Body / Navy Blazer -->
+    <path d="M 40,310 C 20,240 50,195 90,175 L 140,245 L 190,175 C 230,195 260,240 240,310 Z" fill="#0f172a" />
+    <!-- White Collared Blouse inside Blazer -->
+    <polygon points="115,185 140,250 165,185 150,180 140,195 130,180" fill="#ffffff" />
+    <line x1="140" y1="200" x2="140" y2="250" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Neck -->
+    <rect x="124" y="135" width="32" height="45" rx="10" fill="#b47b56" />
+
+    <!-- Head & Face -->
+    <ellipse cx="140" cy="110" rx="44" ry="52" fill="#c98d65" />
+
+    <!-- Dark Hair Flowing -->
+    <path d="M 85,115 C 80,60 100,20 140,20 C 180,20 200,60 195,115 C 205,150 200,190 195,210 C 185,170 185,110 185,110 C 185,110 170,40 140,40 C 110,40 95,110 95,110 C 95,110 95,170 85,210 C 80,190 75,150 85,115 Z" fill="#1c1917" />
+
+    <!-- Facial Features -->
+    <!-- Eyes -->
+    <ellipse cx="123" cy="102" rx="6" ry="3.5" fill="#ffffff" />
+    <circle cx="123" cy="102" r="2.5" fill="#1e293b" />
+    <ellipse cx="157" cy="102" rx="6" ry="3.5" fill="#ffffff" />
+    <circle cx="157" cy="102" r="2.5" fill="#1e293b" />
+    <!-- Eyebrows -->
+    <path d="M 115,93 Q 123,89 131,93" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 149,93 Q 157,89 165,93" stroke="#1c1917" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <!-- Nose -->
+    <path d="M 140,102 L 138,114 L 143,115" stroke="#a26c48" stroke-width="2" stroke-linecap="round" fill="none" />
+    <!-- Warm Smiling Lips with Bright Teeth -->
+    <path d="M 125,126 Q 140,140 155,126 Z" fill="#b91c1c" />
+    <path d="M 127,126 Q 140,133 153,126 Z" fill="#ffffff" />
+
+    <!-- Hands Holding Paper & Pointing -->
+    <!-- Left Hand Holding Paper (Left Side) -->
+    <g transform="translate(-300, 230)">
+      <rect x="0" y="0" width="35" height="20" rx="8" fill="#c98d65" transform="rotate(15)" />
+      <circle cx="5" cy="5" r="8" fill="#b47b56" />
+      <circle cx="15" cy="8" r="7" fill="#c98d65" />
+      <circle cx="25" cy="11" r="7" fill="#c98d65" />
+    </g>
+
+    <!-- Right Hand with Pointing Finger pointing towards the Watermark Documents -->
+    <g transform="translate(5, 175) rotate(-35)">
+      <!-- Sleeve -->
+      <rect x="0" y="0" width="60" height="35" rx="10" fill="#0f172a" />
+      <rect x="55" y="5" width="12" height="25" rx="4" fill="#ffffff" />
+      <!-- Hand Base -->
+      <circle cx="75" cy="18" r="16" fill="#c98d65" />
+      <!-- Extended Index Finger pointing towards left -->
+      <rect x="75" y="8" width="55" height="12" rx="6" fill="#c98d65" />
+      <circle cx="128" cy="14" r="6" fill="#b47b56" />
+      <!-- Folded other fingers -->
+      <rect x="75" y="20" width="24" height="10" rx="5" fill="#b47b56" />
+      <rect x="72" y="28" width="20" height="10" rx="5" fill="#a26c48" />
+    </g>
+  </g>
+</svg>
