@@ -175,7 +175,7 @@ export const TallyShopLauncherModal: React.FC<TallyShopLauncherModalProps> = ({
                   3
                 </span>
                 <span>
-                  <strong>{addon.title}</strong> will immediately open where you can click <strong>&quot;Try in lic. mode&quot;</strong> or test the demo!
+                  <strong>{addon.title}</strong> will immediately open where you can click <strong>&quot;Try in lic. mode&quot;</strong> to test the demo!
                 </span>
               </li>
             </ol>
