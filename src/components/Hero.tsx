@@ -71,18 +71,20 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Column: TallyShop Quick Status Card */}
           <div className="lg:col-span-5">
           <div className="bg-white/5 backdrop-blur-md p-6 sm:p-7 rounded-2xl border border-[#bec6e0]/20 shadow-2xl flex flex-col gap-5">
-            <div className="flex items-start justify-between border-b border-[#bec6e0]/10 pb-4 gap-3">
-              <div className="flex flex-col gap-1">
+            <div className="border-b border-[#bec6e0]/10 pb-4 flex flex-col gap-2">
+              <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-[#bec6e0]">TallyShop Quick Status</span>
-                <span className="text-xs font-semibold text-white/90 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] shrink-0" />
-                  <span>Developed by Vinay Chauhan - V K Computerised System</span>
+                <span className="bg-[#22C55E]/20 text-[#22C55E] text-xs px-3 py-1 rounded-full flex items-center gap-1.5 font-semibold shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse"></span>
+                  <span>Live & Certified</span>
                 </span>
               </div>
-              <span className="bg-[#22C55E]/20 text-[#22C55E] text-xs px-3 py-1 rounded-full flex items-center gap-1.5 font-semibold shrink-0">
-                <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse"></span>
-                <span>Live & Certified</span>
-              </span>
+
+              {/* Full length line of text with minor top & bottom space */}
+              <div className="my-1.5 w-full flex items-center gap-2 text-xs sm:text-sm font-semibold text-white/95">
+                <CheckCircle2 className="w-4 h-4 text-[#22C55E] shrink-0" />
+                <span className="tracking-wide">Developed by Vinay Chauhan - V K Computerised System</span>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
