@@ -81,9 +81,9 @@ export const Hero: React.FC<HeroProps> = ({
               </div>
 
               {/* Full length line of text with background color and mobile-friendly font size */}
-              <div className="my-1.5 w-full bg-black/40 border border-white/10 rounded-lg px-2.5 py-1.5 flex items-center gap-2 text-[11px] sm:text-xs font-semibold text-white/95 shadow-inner">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] shrink-0" />
-                <span className="tracking-tight sm:tracking-normal truncate">
+              <div className="my-1.5 w-full bg-black/40 border border-white/10 rounded-lg px-2 sm:px-2.5 py-1.5 flex items-center gap-1.5 sm:gap-2 text-[9.5px] min-[390px]:text-[10.5px] sm:text-xs font-semibold text-white/95 shadow-inner">
+                <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#22C55E] shrink-0" />
+                <span className="tracking-tight sm:tracking-normal whitespace-nowrap">
                   Developed by Vinay Chauhan - V K Computerised System
                 </span>
               </div>
