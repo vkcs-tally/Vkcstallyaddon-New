@@ -80,10 +80,12 @@ export const Hero: React.FC<HeroProps> = ({
                 </span>
               </div>
 
-              {/* Full length line of text with minor top & bottom space */}
-              <div className="my-1.5 w-full flex items-center gap-2 text-xs sm:text-sm font-semibold text-white/95">
-                <CheckCircle2 className="w-4 h-4 text-[#22C55E] shrink-0" />
-                <span className="tracking-wide">Developed by Vinay Chauhan - V K Computerised System</span>
+              {/* Full length line of text with background color and mobile-friendly font size */}
+              <div className="my-1.5 w-full bg-black/40 border border-white/10 rounded-lg px-2.5 py-1.5 flex items-center gap-2 text-[11px] sm:text-xs font-semibold text-white/95 shadow-inner">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] shrink-0" />
+                <span className="tracking-tight sm:tracking-normal truncate">
+                  Developed by Vinay Chauhan - V K Computerised System
+                </span>
               </div>
             </div>
 
