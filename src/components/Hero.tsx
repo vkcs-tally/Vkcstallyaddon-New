@@ -41,13 +41,6 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Headline and CTAs */}
           <div className="lg:col-span-7 flex flex-col gap-5">
-            <div className="inline-flex items-center gap-2 bg-black/40 border border-[#bec6e0]/20 px-3.5 py-1.5 rounded-full w-fit backdrop-blur-sm">
-              <CheckCircle2 className="w-4 h-4 text-[#22C55E]" />
-              <span className="text-xs font-semibold text-[#bec6e0] tracking-wide uppercase">
-                Developed by Vinay Chauhan - V K Computerised System
-              </span>
-            </div>
-
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Power Up TallyPrime with 21+ Advanced Add-ons
             </h1>
@@ -78,9 +71,15 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Right Column: TallyShop Quick Status Card */}
           <div className="lg:col-span-5">
           <div className="bg-white/5 backdrop-blur-md p-6 sm:p-7 rounded-2xl border border-[#bec6e0]/20 shadow-2xl flex flex-col gap-5">
-            <div className="flex items-center justify-between border-b border-[#bec6e0]/10 pb-4">
-              <span className="text-sm font-medium text-[#bec6e0]">TallyShop Quick Status</span>
-              <span className="bg-[#22C55E]/20 text-[#22C55E] text-xs px-3 py-1 rounded-full flex items-center gap-1.5 font-semibold">
+            <div className="flex items-start justify-between border-b border-[#bec6e0]/10 pb-4 gap-3">
+              <div className="flex flex-col gap-1">
+                <span className="text-sm font-medium text-[#bec6e0]">TallyShop Quick Status</span>
+                <span className="text-xs font-semibold text-white/90 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#22C55E] shrink-0" />
+                  <span>Developed by Vinay Chauhan - V K Computerised System</span>
+                </span>
+              </div>
+              <span className="bg-[#22C55E]/20 text-[#22C55E] text-xs px-3 py-1 rounded-full flex items-center gap-1.5 font-semibold shrink-0">
                 <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse"></span>
                 <span>Live & Certified</span>
               </span>
