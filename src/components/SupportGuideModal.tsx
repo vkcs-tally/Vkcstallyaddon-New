@@ -20,7 +20,7 @@ export const SupportGuideModal: React.FC<SupportGuideModalProps> = ({
   const faqs = [
     {
       q: 'Will these add-ons work with my TallyPrime release?',
-      a: 'Yes, all VKCS add-ons are tested and certified for TallyPrime Release 1.0 through 5.0.'
+      a: 'Yes, all VKCS add-ons are tested and certified for TallyPrime Release 1.0 onwards.'
     },
     {
       q: 'Do I need separate licenses for multi-user Tally Gold?',
@@ -28,7 +28,7 @@ export const SupportGuideModal: React.FC<SupportGuideModalProps> = ({
     },
     {
       q: 'How does the 1-day free trial work?',
-      a: 'Go to Gateway of Tally > F1: Help > TallyShop. Search for the module and click "Try". Tally will immediately download and activate the module for 1 full business day with zero limitations.'
+      a: 'Go to Gateway of Tally > F1: Help > TallyShop. Search for the module and click "Try in Lic. Mode". Tally will immediately download and activate the module for 1 full business day with zero limitations.'
     },
     {
       q: 'What if we require custom fields or customized invoice printouts?',

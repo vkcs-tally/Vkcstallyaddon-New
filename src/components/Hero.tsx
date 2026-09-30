@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, PlayCircle, LayoutGrid, HelpCircle } from 'lucide-react';
+import { CheckCircle2, PlayCircle, LayoutGrid, HelpCircle, ExternalLink, Award } from 'lucide-react';
 import { VKCSEmailSignature } from './VKCSEmailSignature';
 
 interface HeroProps {
@@ -20,8 +20,22 @@ export const Hero: React.FC<HeroProps> = ({
 
       <div className="max-w-7xl mx-auto relative z-10 flex flex-col gap-8">
         {/* Top VKCS Email Signature Image Banner */}
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-3">
           <VKCSEmailSignature className="shadow-2xl" />
+
+          {/* New Button Below Top Banner: Our Profile with Tally */}
+          <div className="flex items-center justify-center sm:justify-end">
+            <a
+              href="https://tallysolutions.com/partners/v-k-computerised-system/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 bg-gradient-to-r from-[#0c4a75] to-[#0284c7] hover:from-[#083353] hover:to-[#0369a1] text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition-all border border-sky-400/30 group active:scale-95 cursor-pointer"
+            >
+              <Award className="w-4 h-4 text-[#22C55E]" />
+              <span>Our Profile with Tally</span>
+              <ExternalLink className="w-4 h-4 text-sky-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
